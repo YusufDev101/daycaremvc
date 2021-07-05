@@ -2,48 +2,71 @@
     ViewData["Title"] = "Home Page";
 }
 
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css//Home.css" />
+    @*<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">*@
+</head>
+
+
 <div class="container">
-    <h2>Basic Table</h2>
-    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-            </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Actual search box -->
+    <div class="searchcontainer">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+    </div>
+    <div class="cellphone-container">
+        <div class="movie">
+            <div class="menu"><i class="material-icons"></i></div>
+            <div class="movie-img"></div>
+            <div class="text-movie-cont">
+                <div class="mr-grid">
+                    <div class="col1">
+                        <h1>DC's Legends of Tomorrow</h1>
+                        <ul class="movie-gen">
+                            <li>PG-13  /</li>
+                            <li>5 Seasons  /</li>
+                            <li>Adventure, Sci-Fi,</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mr-grid summary-row">
+                    <div class="col2">
+                        <h5>SUMMARY</h5>
+                    </div>
+                    <div class="col2">
+                        <ul class="movie-likes">
+                            <li><i class="material-icons">&#xE813;</i>124</li>
+                            <li><i class="material-icons">&#xE813;</i>3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mr-grid">
+                    <div class="col1">
+                        <p class="movie-description">
+                            Rip Hunter, a time traveller, comes to know of Vandal Savage's plan to cause an apocalypse to destroy Earth and time. However, he assembles superheroes to thwart Savage's evil plan and save the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="mr-grid actors-row">
+                    <div class="col1">
+                        <p class="movie-actors">Matthew McConaughey, Anne Hathaway, Jessica Chastain</p>
+                    </div>
+                </div>
+                <div class="mr-grid action-row">
+
+                    <div class="col6 action-btn">
+                        <i class="material-icons">&#xE161;</i>
+                    </div>
+                    <div class="col6 action-btn">
+                        <i class="material-icons">&#xE866;</i>
+                    </div>
+                    <div class="col6 action-btn">
+                        <i class="material-icons">&#xE80D;</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
