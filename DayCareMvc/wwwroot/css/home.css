@@ -1,0 +1,409 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+
+body {
+    background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95)), url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/05/legends-of-tomorrow-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.cellphone-container {
+    width: 375px;
+    height: 750px;
+    background-color: #1e1b26;
+    margin: 20px auto 20px auto;
+    box-shadow: 5px 5px 115px -14px black;
+    border-radius: 4px;
+}
+
+.menu {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    z-index: 999;
+}
+
+    .menu i {
+        font-size: 40px;
+        color: #fe4141;
+        filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+    }
+
+.movie-img {
+    width: 100%;
+    height: 380px;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BNDUxM2YwODYtYTNlMy00NzZjLWE0MzktYWNhY2MxNWJlMmRlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 111 !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(0.35, black), color-stop(0.5, black), color-stop(0.65, black), color-stop(0.85, rgba(0, 0, 0, 0.6)), color-stop(1, transparent));
+    position: relative;
+}
+
+.movie {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+39,1e1b26+53&0+38,1+55 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, #1e1b26 55%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, #1e1b26 55%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.06) 39%, rgba(30, 27, 38, 0.88) 53%, #1e1b26 55%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1e1b26',GradientType=0 );
+    /* IE6-9 */
+    position: absolute;
+    background-size: contain;
+    background-size: cover;
+    z-index: 1 !important;
+    width: 375px;
+    height: 660px;
+    display: block;
+    border-radius: 4px;
+}
+
+.text-movie-cont {
+    padding: 0px 12px;
+    text-align: justify;
+}
+
+.action-btn {
+    text-align: right;
+}
+
+    .action-btn i {
+        color: #fe4141;
+        font-size: 28px;
+        text-align: right;
+    }
+
+.watch-btn {
+    display: block;
+    border: 1px solid #fe4141;
+    border-radius: 5px;
+    padding: 4px;
+    width: 140px;
+}
+
+    .watch-btn h3 i {
+        font-size: 14px;
+        margin-right: 2px;
+        position: relative;
+        float: left;
+        line-height: 1;
+    }
+
+.action-row {
+    margin-top: 24px;
+}
+
+.summary-row {
+    margin-top: 12px;
+}
+
+/* TYPOGRAPHY STARTS */
+/* Fonts */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat", sans-serif;
+    color: #e7e7e7;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fe4141;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.movie-gen, .movie-likes {
+    margin: 0px;
+    padding: 0px;
+}
+
+    .movie-gen li, .movie-likes li {
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        color: #818181;
+        width: auto;
+        display: block;
+        float: left;
+        margin-right: 6px;
+        font-weight: 600;
+    }
+
+.movie-likes {
+    float: right;
+}
+
+    .movie-likes li {
+        color: #fe4141;
+    }
+
+        .movie-likes li:last-child {
+            margin-right: 0px;
+        }
+
+        .movie-likes li i {
+            font-size: 14px;
+            margin-right: 4px;
+            position: relative;
+            float: left;
+            line-height: 1;
+        }
+
+.movie-details {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #b4b4b4;
+}
+
+.movie-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9b9b9b;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.movie-actors {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #e7e7e7;
+    font-style: italic;
+}
+
+/* TYPOGRAPHY ENDS */
+/** GRID STARTS **/
+.thegrid {
+    margin: 0 auto;
+}
+
+.elements-distance, .movie-details, .movie-description, .movie-actors {
+    margin: 0px;
+}
+
+.mr-grid {
+    width: 100%;
+}
+
+    .mr-grid:before,
+    .mr-grid:after {
+        content: "";
+        display: table;
+    }
+
+    .mr-grid:after {
+        clear: both;
+    }
+
+.mr-grid {
+    *zoom: 1;
+}
+
+.col1,
+.col2,
+.col3,
+.col3rest,
+.col4,
+.col4rest,
+.col5,
+.col5rest,
+.col6,
+.col6rest {
+    margin: 0% 0.5% 0.5% 0.5%;
+    padding: 1%;
+    float: left;
+    display: block;
+}
+
+/* Columns match, minus margin sum. E.G. margin-left+margin-right=1%, col2=50%-1% - added padding:1%*/
+.col1 {
+    width: 98%;
+}
+
+.col2 {
+    width: 47%;
+}
+
+.col3 {
+    width: 30.3333333333%;
+}
+
+.col4 {
+    width: 22%;
+}
+
+.col5 {
+    width: 17%;
+}
+
+.col6 {
+    width: 13.6666666667%;
+}
+
+/* Columns match with their individual number. E.G. col3+col3rest=full width row */
+.col3rest {
+    width: 63.6666666667%;
+}
+
+.col4rest {
+    width: 72%;
+}
+
+.col5rest {
+    width: 77%;
+}
+
+.col6rest {
+    width: 80.3333333333%;
+}
+
+
+
+
+
+.searchcontainer {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+}
+
+    .searchcontainer .search {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background: crimson;
+        border-radius: 50%;
+        transition: all 1s;
+        z-index: 4;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    }
+
+        .searchcontainer .search:hover {
+            cursor: pointer;
+        }
+
+        .searchcontainer .search::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: 22px;
+            right: 0;
+            bottom: 0;
+            left: 22px;
+            width: 12px;
+            height: 2px;
+            background: white;
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+
+        .searchcontainer .search::after {
+            content: "";
+            position: absolute;
+            margin: auto;
+            top: -5px;
+            right: 0;
+            bottom: 0;
+            left: -5px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 2px solid white;
+            transition: all 0.5s;
+        }
+
+    .searchcontainer input {
+        font-family: "Inconsolata", monospace;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background: crimson;
+        color: white;
+        text-shadow: 0 0 10px crimson;
+        padding: 0 80px 0 20px;
+        border-radius: 30px;
+        box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+        transition: all 1s;
+        opacity: 0;
+        z-index: 5;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+    }
+
+        .searchcontainer input:hover {
+            cursor: pointer;
+        }
+
+        .searchcontainer input:focus {
+            width: 300px;
+            opacity: 1;
+            cursor: text;
+        }
+
+            .searchcontainer input:focus ~ .search {
+                right: -250px;
+                background: #151515;
+                z-index: 6;
+            }
+
+                .searchcontainer input:focus ~ .search::before {
+                    top: 0;
+                    left: 0;
+                    width: 25px;
+                }
+
+                .searchcontainer input:focus ~ .search::after {
+                    top: 0;
+                    left: 0;
+                    width: 25px;
+                    height: 2px;
+                    border: none;
+                    background: white;
+                    border-radius: 0%;
+                    transform: rotate(-45deg);
+                }
+
+        .searchcontainer input::placeholder {
+            color: white;
+            opacity: 0.5;
+            font-weight: bolder;
+        }
