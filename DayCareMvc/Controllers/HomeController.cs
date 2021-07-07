@@ -1,4 +1,5 @@
 ﻿using DayCareMvc.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -20,7 +21,14 @@ namespace DayCareMvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("_Name")))
+            {
+                return View("Views/Home/Login.cshtml");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public IActionResult Privacy()
