@@ -23,7 +23,7 @@ namespace DayCareMvc.Controllers
         {
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("_Name")))
             {
-                return View("Views/Home/Login.cshtml");
+                return View("Views/Login/Login.cshtml");
             }
             else
             {
