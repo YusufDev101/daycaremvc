@@ -1,6 +1,22 @@
-﻿
+﻿.netflix-row {
+    overflow: scroll;
+    width: 90%;
+    overflow-y: hidden
+}
 
-.Image {
-   width: 50%;
-   height: 40%
+.netflix-row--inner {
+    font-size: 0;
+    white-space: nowrap;
+    margin-left: -85px;
+    margin-top: 20px
+}
+
+.netflix-row--item {
+    display: inline-block;
+    background: white;
+    width: 120px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 0px;
 }

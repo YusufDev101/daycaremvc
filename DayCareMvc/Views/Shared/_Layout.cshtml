@@ -17,50 +17,77 @@
 </head>
 
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar-container shadow-lg p-3 mb-5 bg-white rounded">
-    <div class="sidebar-logo">
-        Project Name
-    </div>
-    <ul class="sidebar-navigation">
-        <li class="header">Navigation</li>
-        <li>
-            <a href="#">
-                <i class="fa fa-home" aria-hidden="true"></i> Homepage
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-home" aria-hidden="true"></i> Dashboard
-            </a>
-        </li>
-        <li class="header">Another Menu</li>
-        <li>
-            <a href="#">
-                <i class="fa fa-users" aria-hidden="true"></i> Friends
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-cog" aria-hidden="true"></i> Settings
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> Information
-            </a>
-        </li>
-    </ul>
-    </div>
+    <header>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-grow-1 bd-highlight">
+                    <div style="margin-top: -50px">Day Care</div>
+                </div>
+                <button type="button" class="btn btn-secondary"
+                        style="margin-right: 10px;
+                        height: 30px;
+                        margin-top: 5px;
+                        align-content: center;
+                        text-align: center;
+                        vertical-align: middle">
+                    Refresh
+                </button>
 
-    <div class="container">
+                <div class="vl"></div>
+
+                <i class='fas fa-apple-alt' style='font-size:25px; color:gray; margin-top: 5px; margin-left: 5px'></i>
+                <i class='fas fa-apple-alt' style='font-size:25px; color: gray; margin-top: 5px; margin-left: 5px'></i>
+                <i class='fas fa-apple-alt' style='font-size:25px; color: gray; margin-top: 5px; margin-left: 5px'></i>
+                <div class="p-2 bd-highlight">Logged in user</div>
+                @*<partial name="_LoginPartial" />*@
+            </div>
+        </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar-container shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: -100px; position: fixed">
+                <div class="sidebar-logo">
+                    Project Name
+                </div>
+                <ul class="sidebar-navigation">
+                    <li class="header">Navigation</li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home" aria-hidden="true"></i> Homepage
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home" aria-hidden="true"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="header">Another Menu</li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i> Friends
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Information
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <div class="container" style="margin-top: -20px; margin-left: 220px">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted navbar-dark" style="background-color: darkgrey">
-        <div class="container">
+    <footer class="border-top footer text-muted navbar-dark" style="background-color: darkgrey;">
+        <div class="container" style="margin-left: 220px">
             &copy; 2021 - DayCareMvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>

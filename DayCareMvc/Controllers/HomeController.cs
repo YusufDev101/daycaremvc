@@ -1,34 +1,26 @@
-﻿using DayCareMvc.Models;
-using Microsoft.AspNetCore.Http;
+﻿using DayCareMvc.Interfaces;
+using DayCareMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DayCareMvc.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IEnumerable<MovieModel> movieModels;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromServices] IMoviesRepository moviesRepository)
         {
-            if (string.IsNullOrEmpty(HttpContext.Session.GetString("_Name")))
-            {
-                return View("Views/Login/Login.cshtml");
-            }
-            else
-            {
-                return View();
-            }
+            ViewBag.MovieSummaryObject = moviesRepository.GetAll();
+            return View();
         }
 
         public IActionResult Privacy()

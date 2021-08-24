@@ -1,3 +1,5 @@
+using DayCareMvc.Interfaces;
+using DayCareMvc.Repository;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -84,7 +86,6 @@ namespace DayCareMvc
                 options.AddPolicy("AllowSpecificOrigin", builder => builder.WithOrigins("https://localhost:44369/").AllowCredentials());
             });
 
-
             // Custom added.
             services.AddMvc(options =>
             {
@@ -92,7 +93,8 @@ namespace DayCareMvc
                 new AutoValidateAntiforgeryTokenAttribute());
             });
 
-
+            // My Custom services.
+            services.Add(new ServiceDescriptor(typeof(IMoviesRepository), new MoviesRepository()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
