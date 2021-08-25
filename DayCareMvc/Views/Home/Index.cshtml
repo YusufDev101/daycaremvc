@@ -9,55 +9,30 @@
 </head>
 
 
-<div class="container-fluid">
-    @*<div style="margin-left: -20px; ">
+<div class="container-fluid" style="display: flex; flex: 1; width: 100%; margin-top: -50px; margin-left: -40px; background-color: white; border-radius: 20px;">
 
-            <div class="netflix-row">
+    <div>
+        @*shadow-lg p-3 mb-5 bg-white rounded*@
+        <div class="netflix-row">
 
-                @foreach (var item in MovieModel)
-                {
-
-                    <li class="netflix-row--item ">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded"
-                             style="width: 120px;
-                    height: 150px;
-                    border-radius: 20px;
-                    padding: 0px;
-                    display: flex;
-                    background-image: url(@item.Image);
-                    background-repeat: no-repeat;
-                    background-size: 120px 150px; ">
-                        </div>
-                    </li>
-                }
-
-            </div>
-
-        </div>*@
-
-    <div class="container-fluid netflix-row" style=" margin-left:140px; margin-top: -20px">
-        <ul class="netflix-row--inner" id="Mydatatabs">
             @foreach (var item in MovieModel)
             {
-                <li class="netflix-row--item ">
-                    @*<a onclick="GetMovies(this)" id="ServerDelete" title="Delete" data-id="@item.MovieName | @item.MoviesId">*@
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Movies" asp-action="MovieDetail">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded"
-                             style="width: 120px;
-                    height: 150px;
-                    border-radius: 20px;
-                    padding: 0px;
-                    display: flex;
-                    background-image: url(@item.Image);
-                    background-repeat: no-repeat;
-                    background-size: 120px 150px; ">
-                        </div>
-                    </a>
-                </li>
+                <div    class="netflix-row--item ">
+                    <div    class="card "
+                            style="width: 150px;
+                            height: 200px;
+                            border-radius: 20px;
+                            padding: 0px;
+                            display: flex;
+                            background-image: url(@item.Image);
+                            background-repeat: no-repeat;
+                            background-size: 150px 200px; ">
+                    </div>
+                </div>
             }
 
-        </ul>
+        </div>
+
     </div>
 
 </div>
-

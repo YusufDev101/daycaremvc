@@ -45,7 +45,7 @@ namespace DayCareMvc.Repository
                             .PostJsonAsync(new
                             {
                                 serviceKey = "api_Movies_v1_List",
-                                GenreId = 1
+                                GenreId = 0
                             }).ReceiveString().Result;
 
                 var ObjResult = JsonConvert.DeserializeObject<MoviesModel>(readAsStringAsync);
