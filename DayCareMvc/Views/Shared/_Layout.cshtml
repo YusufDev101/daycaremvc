@@ -44,40 +44,45 @@
             </div>
         </div>
 
-            <!-- Sidebar -->
-            <div class="sidebar-container shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: -100px; position: fixed">
-                <div class="sidebar-logo">
-                    Project Name
-                </div>
-                <ul class="sidebar-navigation">
-                    <li class="header">Navigation</li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-home" aria-hidden="true"></i> Movies
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-area="" asp-controller="Home" asp-action="Index">
-                            <i class="fa fa-home" aria-hidden="true"></i> Series
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-home" aria-hidden="true"></i> Collections
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-home" aria-hidden="true"></i> Anime
-                        </a>
-                    </li>
-                    @*<div style="display: flex"></div>*@
-                    <li class="border-top footer text-muted navbar-dark" style="background-color: darkgrey; position: absolute; bottom: 0; left: 0; ">
+        <!-- Sidebar -->
+        <div class="sidebar-container shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: -130px; position: fixed">
+            <div class="sidebar-logo">
+                Project Name
+            </div>
+            <ul class="sidebar-navigation">
+                <li class="header">Navigation</li>
+                <li style="margin-top: 10px">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="fa fa-home active" aria-hidden="true"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Movies" asp-action="Index">
+                        <i class="fa fa-home" aria-hidden="true"></i> Movies
+                    </a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="fa fa-home" aria-hidden="true"></i> Series
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i> Collections
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i> Anime
+                    </a>
+                </li>
+                @*<div style="display: flex"></div>*@
+                @*<li class="border-top footer text-muted navbar-dark" style="background-color: darkgrey; position: absolute; bottom: 0; left: 0; ">
             <div class="container" style="margin-left: 220px">
                 &copy; 2021 - DayCareMvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             </div>
-        </li>
-                    @*<li class="header">Another Menu</li>
+        </li>*@
+                @*<li class="header">Another Menu</li>
         <li>
             <a href="#">
                 <i class="fa fa-users" aria-hidden="true"></i> Friends
@@ -93,22 +98,22 @@
                 <i class="fa fa-info-circle" aria-hidden="true"></i> Information
             </a>
         </li>*@
-                </ul>
-            </div>
+            </ul>
+        </div>
     </header>
 
-    <div class="jumbotron" style="margin-top: -20px; margin-left: 240px; background-color: white; height: 90vh; display: flex;  margin-bottom: 20px ">
-        <main role="main" class="pb-3" style="display: flex; background-color: white; ">
+    <div class="jumbotron" style="margin-top: -35px; margin-left: 230px; background-color: white; height: 90vh; display: flex;  margin-bottom: 20px ">
+        <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     @*<footer class="border-top footer text-muted navbar-dark" style="background-color: darkgrey;">
-        <div class="container" style="margin-left: 220px">
-            &copy; 2021 - DayCareMvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>*@
-   
+            <div class="container" style="margin-left: 220px">
+                &copy; 2021 - DayCareMvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    IEnumerable<MovieModel> MovieModel = ViewBag.MovieSummaryObject;
+
+}
+
+<head>
+    <link rel="stylesheet" href="/css//newhome.css" />
+</head>
+
+
+<div class="container-fluid" style="display: flex; flex: 1; width: 100%; margin-top: -50px; margin-left: -40px; background-color: white; border-radius: 20px;">
+
+    <div>
+        @*shadow-lg p-3 mb-5 bg-white rounded*@
+        <div class="netflix-row">
+
+            @foreach (var item in MovieModel)
+            {
+                <div    class="netflix-row--item ">
+                    <div    class="card "
+                            style="width: 150px;
+                            height: 200px;
+                            border-radius: 20px;
+                            padding: 0px;
+                            display: flex;
+                            background-image: url(@item.Image);
+                            background-repeat: no-repeat;
+                            background-size: 150px 200px; ">
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+</div>
